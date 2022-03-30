@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>BodyPump</title>
+<link rel="stylesheet" href="css/style.css">
+    </head>
+  <body class="content-box d-flex justify-content-between mb-5 d-md-flex">
+    <div class="container">
+    <h1 class="text-center mb-5">BODYPUMP workout</h1>
+    <h2 class="text-center mb-5"><em>Stay healthy and in shape with BODYPUMP</em></h2>
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/472/original/Bodypump.jpg?1640349994" alt="BODYPUMP" width="500" class="img-fluid mb-5">
+    <p class="text-center mb-5"> <strong>
+        BODYPUMP is a fast-paced, barbell-based workout that's specifically
+        designed to help you get lean, toned and fit. It uses a combination of
+        motivating music, fantastic instructors and scientifically proven moves
+        to help you achieve these targets more quickly than you would working
+        out on your own. As muscles repair from the workouts your body's
+        metabolism is increased. This means that calories are burned by BODYPUMP
+        at an increased rate long after you finish your BODYPUMP class. With
+        increased muscle mass, you'll use more energy, resulting in a greater
+        rate of weight loss. Because BODYPUMP challenges are targeting your
+        major muscle groups the recomendation is that you do no more than two to
+        three workouts a week, and make sure you have a day off in between. Add
+        two or three cardio workouts into the mix and you'll shape and tone your
+        body in no time.
+    </strong>
+    </p>
+    <a href="https://www.lesmills.com" target="_blank" >Lear more on Lesmills.com</a>
+    <p class="text-center mt-5">"Do you want to know if this is an exercise for you?" <br>
+    Click below to know more. </p>
+    <button >Click here</button>
+    <p class="developer text-center"> "This page was built by" <a href="https://precious-otter-6afb15.netlify.app/work.html" target="_blank"> Luciana Carvalho</a></p>
+    </div>
+
+
+    <script>
+      function questionary() {
+        let name = prompt(" What is your name?");
+        let groupLesson = prompt(
+          " Do you like to participate in group lessons?"
+        );
+        groupLesson = groupLesson.toLowerCase();
+
+        let weight = prompt(" Do you like to workout with weights?");
+        weight = weight.toLowerCase();
+        if (groupLesson === "yes" && weight === "yes") {
+          alert("Great " + name + "! BODYPUMP is an exercise for you!!! 💪💪");
+        } else {
+          alert("Sorry " + name + "! BODYPUMP is not for you!😥");
+        }
+      }
+      let clickHereButton = document.querySelector("button");
+
+      clickHereButton.addEventListener("click", questionary);
+    </script>
+  </body>
+</html>
